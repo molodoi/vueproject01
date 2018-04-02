@@ -10,9 +10,9 @@
 
 <script>
 export default {
-  name: 'hello',
-  data () {
-    return {
+  name: 'hello', // Nom du module composant certain préfère mettre Hello ce qui injectera dans la vue la balise <hello> ou <Hello>
+  data () { // Définition du state càd les différentes variables qui seront disponible dans la vue
+    return { // data et un gros objet ou tableau qui contient toutes les variables de notre vue
       msg: 'Welcome to Your Vue.js App'
     }
   }

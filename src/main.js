@@ -4,12 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-//http://www.flavienbeninca.fr/2016/06/15/vuejs-demarrer-avec-bootstrap.html
+// Import de jquery
 import jQuery from 'jquery'
 window.jQuery = window.$ = jQuery
+// require de bootstrap
 require('bootstrap')
 
-import './assets/scss/mystyle.scss';
+import './assets/scss/main.scss';
 
 // Configuration globale de vue : Assigné à false pour ne plus avoir la notification de production au démarrage de Vue.
 Vue.config.productionTip = false

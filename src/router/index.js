@@ -14,13 +14,16 @@ export default new Router({
     {
 		path: '/',
 		name: 'home',
+		// injecter un composant au router-view
 		//component: Hello,
+		// Injecter plusieurs composant au router-view
 		components: {
 			default: Hello,
 			sidebar: Sidebar
 		}
     },
     {
+    	// passer un paramètres dans une url
 		path: '/posts/:id(\\d+)',
 		name: 'posts-id',
 		//component: SinglePost,
@@ -48,6 +51,7 @@ export default new Router({
 		}
     },
     {
+    	// renvoyer à la racine quand l'utilisateur saisie n'importe quoi
 		path: '*',
 		redirect: '/',
     }
